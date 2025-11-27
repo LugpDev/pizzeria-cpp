@@ -53,8 +53,16 @@ Equipo:
 
 Para compilar el proyecto, ejecuta:
 
+MacOs
+
 ```sh
 make
+```
+
+Windows
+
+```sh
+mingw32-make
 ```
 
 El ejecutable se generará en `bin/main`.
