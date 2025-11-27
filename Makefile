@@ -5,7 +5,7 @@ TARGET = bin/main
 SOURCES := $(filter-out test%.cpp, $(filter-out tests/*.cpp, $(wildcard src/*.cpp)))
 
 # Regla principal
-$(TARGET):
+$(TARGET): $(SOURCES)
 	$(CXX) $(SOURCES) -o $(TARGET)
 
 # Limpieza
