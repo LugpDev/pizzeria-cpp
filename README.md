@@ -66,3 +66,17 @@ mingw32-make
 ```
 
 El ejecutable se generará en `bin/main`.
+
+### Ejecución
+
+MacOs
+
+```sh
+./bin/main
+```
+
+Windows
+
+```sh
+.\bin\main
+```
