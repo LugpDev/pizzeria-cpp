@@ -10,6 +10,10 @@ Equipo:
 - Sofía Jatzyri Ocampo Moreno
 - Wendy Molina Rojo
 
+## Diagrama de clases
+
+[Ver diagrama en Lucidchart](https://lucid.app/lucidchart/3501ec50-d2d0-419e-a757-0edd50e97695/edit?viewport_loc=-1146%2C290%2C2418%2C1399%2C0_0&invitationId=inv_27ce7945-38d0-40e1-8cba-5ca67a80b029)
+
 ## Estructura del proyecto
 
 ``` bash
