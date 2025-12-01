@@ -25,7 +25,7 @@ Equipo:
   - Pizza
   
 - Wendy Molina Rojo
-  - Bebidaa
+  - Bebida
   - Cocinero
   - Mesero
 
