@@ -6,9 +6,9 @@ using namespace std;
 
 class Bebida:public Producto{};
 private:
-    string tamañoVaso;
+    string tamanioVaso;
 public:
     void servir();
     Bebida();
-    Bebida(string nombre, flout precio, string tamañoVaso, string estado);
+    Bebida(string _nombre, flout _precio, string _tamanioVaso, string _estado);
 #endif // __BEBIDA_H__
