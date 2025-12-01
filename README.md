@@ -5,10 +5,29 @@ Proyecto para la materia Pensamiento computacional orientado a objetos: Sistema 
 Equipo:
 
 - Luis Alberto Cervantes García
+  *	Pizzería
+  *	Gestor Pedidos
+  *	Menu
+
 - Carlos Alberto Galán Gomez
+  * Empleado
+  * GestorClientes
+  * Pedidos
+
 - Diana Cristina Barreto López
+  * Cliente
+  * Persona
+  * GestorEmpleados
+
 - Sofía Jatzyri Ocampo Moreno
+  * Ingrediente
+  * Producto
+  * Pizza
+  
 - Wendy Molina Rojo
+  *	Bebidaa
+  *	Cocinero
+  *	Mesero
 
 ## Diagrama de clases
 
