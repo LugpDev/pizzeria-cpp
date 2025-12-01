@@ -14,7 +14,8 @@ Bebida::Bebida(){
     estado = "";
     tamanioVaso = "";
 };
-Bebida::Bebida(string _nombre, flout _precio, string _tamanioVaso):Producto(_nombre, _precio, _estado){
+
+Bebida::Bebida(string _nombre, float _precio, string _tamanioVaso):Producto(_nombre, _precio , "pedido"){
     tamanioVaso = _tamanioVaso;
     estado = "pedido";
 }
