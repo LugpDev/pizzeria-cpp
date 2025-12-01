@@ -5,29 +5,29 @@ Proyecto para la materia Pensamiento computacional orientado a objetos: Sistema 
 Equipo:
 
 - Luis Alberto Cervantes García
-  *	Pizzería
-  *	Gestor Pedidos
-  *	Menu
+  - Pizzería
+  - Gestor Pedidos
+  - Menu
 
 - Carlos Alberto Galán Gomez
-  * Empleado
-  * GestorClientes
-  * Pedidos
+  - Empleado
+  - GestorClientes
+  - Pedidos
 
 - Diana Cristina Barreto López
-  * Cliente
-  * Persona
-  * GestorEmpleados
+  - Cliente
+  - Persona
+  - GestorEmpleados
 
 - Sofía Jatzyri Ocampo Moreno
-  * Ingrediente
-  * Producto
-  * Pizza
+  - Ingrediente
+  - Producto
+  - Pizza
   
 - Wendy Molina Rojo
-  *	Bebidaa
-  *	Cocinero
-  *	Mesero
+  - Bebidaa
+  - Cocinero
+  - Mesero
 
 ## Diagrama de clases
 
@@ -59,6 +59,8 @@ Equipo:
 - **Archivos de prueba**: Prefijo `test_` seguido del nombre del componente
   - Ejemplo: `test_pizza.cpp`, `test_pedido.cpp`
 
+### Validación del código
+
 ### Creación de métodos
 
 - **Métodos**: Usar `camelCase`
@@ -68,7 +70,34 @@ Equipo:
 - **Setters**: Prefijo `set` seguido del nombre del atributo
   - Ejemplo: `setNombre()`, `setPrecio()`, `setCantidad()`
 
-### Compilación
+### Conventional Commits
+
+Seguimos la especificación de [Conventional Commits](https://www.conventionalcommits.org/) para los mensajes de commit.
+
+#### Estructura
+
+```
+<tipo>[ámbito opcional]: <descripción>
+```
+
+#### Tipos
+
+- **feat**: Nueva funcionalidad
+  - Ejemplo: `feat(Pizza): agregar método calcularPrecioTotal`
+- **fix**: Corrección de errores
+  - Ejemplo: `fix(Pedido): corregir cálculo de subtotal`
+- **docs**: Cambios en documentación
+  - Ejemplo: `docs(README): actualizar instrucciones de compilación`
+- **style**: Cambios de formato (espacios, punto y coma, etc.)
+  - Ejemplo: `style(Cliente): formatear código según estándares`
+- **refactor**: Refactorización de código
+  - Ejemplo: `refactor(GestorPedidos): simplificar lógica de búsqueda`
+- **test**: Agregar o modificar pruebas
+  - Ejemplo: `test(Pizza): agregar pruebas unitarias`
+- **chore**: Cambios en herramientas, configuración, etc.
+  - Ejemplo: `chore(Makefile): actualizar flags de compilación`
+
+## Compilación
 
 Para compilar el proyecto, ejecuta:
 
@@ -86,7 +115,7 @@ mingw32-make
 
 El ejecutable se generará en `bin/main`.
 
-### Ejecución
+## Ejecución
 
 MacOs
 
