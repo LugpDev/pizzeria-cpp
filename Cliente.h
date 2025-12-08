@@ -13,12 +13,12 @@ private:
 
 public:
     // Constructor
-    Cliente(string nombre, int edad, string telefono)
-        : Persona(nombre, edad, telefono), numDeOrdenes(0) {}
+    Cliente();
+    Cliente(string _nombre, int _edad, string _telefono);
 
     void incrementarOrdenes();
 
-    int getNumDeOrdenes() const;
+    int getNumDeOrdenes();
 };
 
 #endif // __CLIENTE_H__

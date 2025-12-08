@@ -1,13 +1,21 @@
-#include <iostream>
+#include <string>
 #include "Cliente.h"
 
-Cliente::Cliente(const string& nombre, int edad, const string& telefono)
-    : Persona(nombre, edad, telefono), numDeOrdenes(0) {}
+using namespace std;
 
-void Cliente::incrementarOrdenes() {
+Cliente::Cliente() {};
+Cliente::Cliente(string _nombre, int _edad, string _telefono)
+    : Persona(_nombre, _edad, _telefono)
+{
+    numDeOrdenes = 0;
+};
+
+void Cliente::incrementarOrdenes()
+{
     numDeOrdenes++;
-}
+};
 
-int Cliente::getNumDeOrdenes() const {
+int Cliente::getNumDeOrdenes()
+{
     return numDeOrdenes;
-}
+};
