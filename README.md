@@ -11,13 +11,13 @@ Equipo:
 
 - Carlos Alberto Galán Gomez
   - Empleado
-  - GestorClientes
+  - GestorEmpleado
   - Pedidos
 
 - Diana Cristina Barreto López
   - Cliente
   - Persona
-  - GestorEmpleados
+  - GestorCliente
 
 - Sofía Jatzyri Ocampo Moreno
   - Ingrediente
