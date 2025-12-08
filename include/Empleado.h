@@ -17,7 +17,6 @@ public:
     Empleado(string _nombre, int _edad, string _telefono, int _id);
 
     int getId();
-    void setId(int _id);
 };
 
 #endif // __EMPLEADO_H__

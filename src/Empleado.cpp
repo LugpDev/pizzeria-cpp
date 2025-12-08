@@ -11,8 +11,3 @@ int Empleado::getId()
 {
     return id;
 }
-
-void Empleado::setId(int _id)
-{
-    id = _id;
-}
