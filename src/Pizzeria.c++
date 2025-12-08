@@ -109,7 +109,7 @@ Pizzeria::ejecutarOpcion(int opcion)
   }
 }
 
-Pizzeria::string getNombre()
+string Pizzeria::getNombre()
 {
   return nombre;
 };
