@@ -1,12 +1,13 @@
-#ifndef CLIENTE.H
-#define CLIENTE.H
+#ifndef __CLIENTE_H__
+#define __CLIENTE_H__
 
 #include <string>
 #include "Persona.h"
 
 using namespace std;
 
-class Cliente: public Persona {
+class Cliente : public Persona
+{
 private:
     int numDeOrdenes;
 
@@ -18,6 +19,6 @@ public:
     void incrementarOrdenes();
 
     int getNumDeOrdenes() const;
-
 };
-#endif
+
+#endif // __CLIENTE_H__
