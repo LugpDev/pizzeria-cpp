@@ -2,10 +2,18 @@
 
 #include "Pizzeria.h"
 
-Pizzeria::Pizzeria();
-Pizzeria::Pizzeria(string _nombre);
+Pizzeria::Pizzeria() {};
 
-Pizzeria::void mostrarOpciones()
+Pizzeria::Pizzeria(string _nombre)
+{
+  nombre = _nombre;
+  gestorClientes = GestorClientes();
+  gestorEmpleados = GestorEmpleados();
+  gestorPedidos = GestorPedidos();
+  menu = Menu();
+};
+
+void Pizzeria::mostrarOpciones()
 {
   cout << "Bienvenido a " << nombre << "!" << endl;
   cout << "Seleccione una opcion del menu:" << endl;
