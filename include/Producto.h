@@ -13,10 +13,11 @@ protected:
 
 public:
     Producto();
-    Producto(const string &nombre, float precio, string estado);
-    string getNombre() const;
-    float getPrecio() const;
-    string getEstado() const;
+    Producto(string _nombre, float _precio, string _estado);
+
+    string getNombre();
+    float getPrecio();
+    string getEstado();
 };
 
 #endif // PRODUCTO_H

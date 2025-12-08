@@ -7,20 +7,20 @@ Producto::Producto()
     estado = "";
 }
 
-Producto::Producto(const string &nombre, float precio, string estado)
-    : nombre(nombre), precio(precio), estado(estado) {}
+Producto::Producto(string _nombre, float _precio, string _estado)
+    : nombre(_nombre), precio(_precio), estado(_estado) {}
 
-string Producto::getNombre() const
+string Producto::getNombre()
 {
     return nombre;
 }
 
-float Producto::getPrecio() const
+float Producto::getPrecio()
 {
     return precio;
 }
 
-string Producto::getEstado() const
+string Producto::getEstado()
 {
     return estado;
 }
