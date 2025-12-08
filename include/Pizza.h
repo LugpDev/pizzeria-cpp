@@ -14,11 +14,13 @@ private:
     string tamaño;
     vector<Ingrediente> ingredientes;
 
-protected:
-    void ponerIngrediente();
+public:
+    Pizza();
+    Pizza(string nombre, const string &tamaño, vector<Ingrediente> ingredientes);
+
     void Amasar();
+    void ponerIngrediente();
     void Hornear();
-    Pizza(const string &tamaño);
     string getTamaño() const;
 };
 #endif // PIZZA_H
