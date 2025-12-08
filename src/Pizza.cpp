@@ -2,23 +2,27 @@
 #include <string>
 using namespace std;
 
-Pizza::Pizza(const string& tamaño) : tamaño(tamaño) {}
+Pizza::Pizza(const string &tamaño) : tamaño(tamaño) {}
 
-string Pizza::getTamaño() const {
+string Pizza::getTamaño() const
+{
     return tamaño;
 }
 
-void Pizza::Amasar() {
+void Pizza::Amasar()
+{
     estado = "Amasado";
 }
 
-void Pizza::ponerIngrediente() {
-    if (estado == "Amasado") {
+void Pizza::ponerIngrediente()
+{
+    if (estado == "Amasado")
+    {
         estado = "Ingrediente agregado";
     }
 }
 
-
-void Pizza::Hornear() {
+void Pizza::Hornear()
+{
     estado = "Horneado";
 }
