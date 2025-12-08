@@ -29,6 +29,7 @@ public:
     bool getPagado();
     int getId();
     vector<Producto> getProductos();
+    Cliente getCliente();
 
     void setEstado(string _estado);
     void setPagado(bool _pagado);

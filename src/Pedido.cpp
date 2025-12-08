@@ -76,3 +76,8 @@ void Pedido::setProductos(vector<Producto> _productos)
 {
     productos = _productos;
 }
+
+Cliente Pedido::getCliente()
+{
+    return cliente;
+}
