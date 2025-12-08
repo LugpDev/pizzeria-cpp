@@ -1,22 +1,26 @@
 #include "Producto.h"
 
-Producto::Producto(){
+Producto::Producto()
+{
     nombre = "";
     precio = 0.0;
     estado = "";
 }
 
-Producto::Producto(const string& nombre, float precio, string estado)
-     : nombre(nombre), precio(precio), estado(estado) {}
+Producto::Producto(const string &nombre, float precio, string estado)
+    : nombre(nombre), precio(precio), estado(estado) {}
 
-string Producto::getNombre() const {
+string Producto::getNombre() const
+{
     return nombre;
 }
 
-float Producto::getPrecio() const {
+float Producto::getPrecio() const
+{
     return precio;
 }
 
-string Producto::getEstado() const {
+string Producto::getEstado() const
+{
     return estado;
 }
