@@ -1,13 +1,12 @@
 #include "Pedido.h"
 
 Pedido::Pedido() {}
-Pedido::Pedido(int _id, string _estado, vector<Producto> _productos, Cliente _cliente, bool _pagado)
+Pedido::Pedido(int _id, string _estado, Cliente _cliente)
 {
     id = _id;
     estado = _estado;
-    productos = _productos;
     cliente = _cliente;
-    pagado = _pagado;
+    pagado = false;
 }
 
 void Pedido::añadirProducto(Producto producto)
