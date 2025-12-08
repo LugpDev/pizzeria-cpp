@@ -20,7 +20,7 @@ private:
 
 public:
     Pedido();
-    Pedido(int _id, string _estado, Cliente _cliente);
+    Pedido(int _id, Cliente _cliente);
     void añadirProducto(Producto producto);
     void calcularTotal();
     void pagar(float pago);

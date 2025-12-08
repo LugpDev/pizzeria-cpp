@@ -1,10 +1,10 @@
 #include "Pedido.h"
 
 Pedido::Pedido() {}
-Pedido::Pedido(int _id, string _estado, Cliente _cliente)
+Pedido::Pedido(int _id, Cliente _cliente)
 {
     id = _id;
-    estado = _estado;
+    estado = "registrado";
     cliente = _cliente;
     pagado = false;
 }
