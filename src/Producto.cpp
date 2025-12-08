@@ -7,8 +7,8 @@ Producto::Producto()
     estado = "";
 }
 
-Producto::Producto(string _nombre, float _precio, string _estado)
-    : nombre(_nombre), precio(_precio), estado(_estado) {}
+Producto::Producto(string _nombre, float _precio)
+    : nombre(_nombre), precio(_precio), estado("pedido") {}
 
 string Producto::getNombre()
 {

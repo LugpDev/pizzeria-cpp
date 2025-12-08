@@ -13,7 +13,7 @@ protected:
 
 public:
     Producto();
-    Producto(string _nombre, float _precio, string _estado);
+    Producto(string _nombre, float _precio);
 
     string getNombre();
     float getPrecio();
