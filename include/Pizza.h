@@ -4,9 +4,10 @@
 #include <string>
 #include <vector>
 #include "Ingrediente.h"
+#include "Producto.h"
 using namespace std;
 
-class Pizza {
+class Pizza : public Producto { 
 private:
     string tamaño;
     vector<Ingrediente> ingredientes;

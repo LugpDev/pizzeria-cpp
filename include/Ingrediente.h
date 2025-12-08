@@ -9,6 +9,7 @@ private:
     string nombre;
     float costo;
 public:
+    Ingrediente();
     Ingrediente(const string& nombre, float costo);
     string getNombre() const;
     float getCosto() const;
