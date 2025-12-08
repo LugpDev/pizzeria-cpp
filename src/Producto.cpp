@@ -24,8 +24,3 @@ string Producto::getEstado()
 {
     return estado;
 }
-
-void Producto::setPrecio(float _precio)
-{
-    precio = _precio;
-}

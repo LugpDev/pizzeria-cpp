@@ -18,8 +18,6 @@ public:
     string getNombre();
     float getPrecio();
     string getEstado();
-
-    void setPrecio(float _precio);
 };
 
 #endif // PRODUCTO_H
