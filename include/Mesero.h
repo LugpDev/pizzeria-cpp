@@ -5,13 +5,14 @@ using namespace std;
 #include "Empleado.h"
 #include "Bebida.h"
 
-Class Mesero : public Empleado
+class Mesero : public Empleado
 {
 private:
     int bebidasPreparadas;
+
 public:
     int getBebidasPreparadas();
-    void PrepararBebida(Bebida:bebida);
+    void PrepararBebida(Bebida bebida);
     Mesero();
 };
 
