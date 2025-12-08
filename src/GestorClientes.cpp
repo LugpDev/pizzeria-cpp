@@ -10,8 +10,3 @@ vector<Cliente> GestorClientes::getClientes()
 {
     return clientes;
 }
-
-void GestorClientes::setClientes(vector<Cliente> _clientes)
-{
-    clientes = _clientes;
-}

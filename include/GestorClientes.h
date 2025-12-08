@@ -18,6 +18,5 @@ public:
     void agregarCliente(Cliente cliente);
 
     vector<Cliente> getClientes();
-    void setClientes(vector<Cliente> _clientes);
 };
 #endif // __GESTORCLIENTES_H__
