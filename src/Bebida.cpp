@@ -3,19 +3,25 @@
 using namespace std;
 #include "Bebida.h"
 
-
 void Bebida::servir()
 {
-   estado = "servida"; 
+    estado = "servido";
 };
-Bebida::Bebida(){
+Bebida::Bebida()
+{
     nombre = "";
     precio = 0.0;
     estado = "";
     tamanioVaso = "";
 };
 
-Bebida::Bebida(string _nombre, float _precio, string _tamanioVaso):Producto(_nombre, _precio , "pedido"){
+Bebida::Bebida(string _nombre, float _precio, string _tamanioVaso) : Producto(_nombre, _precio, "pedido")
+{
     tamanioVaso = _tamanioVaso;
     estado = "pedido";
+}
+
+string Bebida::getTamanioVaso()
+{
+    return tamanioVaso;
 }
