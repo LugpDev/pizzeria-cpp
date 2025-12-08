@@ -34,5 +34,5 @@ public:
     void setPagado(bool _pagado);
     void setId(int _id);
     void setProductos(vector<Producto> _productos);
-
+};
 #endif // __PEDIDO_H__
