@@ -14,6 +14,7 @@ public:
     int getBebidasPreparadas();
     void PrepararBebida(Bebida bebida);
     Mesero();
+    Mesero (string nombre, int edad, string telefono, int id);
 };
 
 #endif
