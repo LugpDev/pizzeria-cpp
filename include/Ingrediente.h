@@ -4,14 +4,16 @@
 #include <string>
 using namespace std;
 
-class Ingrediente {
+class Ingrediente
+{
 private:
     string nombre;
     float costo;
+
 public:
     Ingrediente();
-    Ingrediente(const string& nombre, float costo);
-    string getNombre() const;
-    float getCosto() const;
+    Ingrediente(string _nombre, float _costo);
+    string getNombre();
+    float getCosto();
 };
 #endif // INGREDIENTE_H
