@@ -14,7 +14,7 @@ Pizza::Pizza(string nombre, const string &tamaño, vector<Ingrediente> ingredien
     }
 }
 
-void Pizza::Amasar()
+void Pizza::amasar()
 {
     if (estado == "pedido")
     {
@@ -30,7 +30,7 @@ void Pizza::ponerIngrediente()
     }
 }
 
-void Pizza::Hornear()
+void Pizza::hornear()
 {
     if (estado == "ingredientes agregados")
     {

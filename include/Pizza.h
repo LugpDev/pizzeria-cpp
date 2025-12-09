@@ -18,9 +18,9 @@ public:
     Pizza();
     Pizza(string nombre, const string &tamaño, vector<Ingrediente> ingredientes);
 
-    void Amasar();
+    void amasar();
     void ponerIngrediente();
-    void Hornear();
+    void hornear();
     string getTamaño() const;
 };
 #endif // PIZZA_H
