@@ -126,26 +126,121 @@ void Pizzeria::ejecutarOpcion(int opcion)
 
     cout << "Mostrar pedidos seleccionado." << endl;
   }
+
   // Menu
   else if (opcion == 8)
   {
-    cout << "Mostrar menu seleccionado." << endl;
+    vector<Bebida> bebidas = menu.getBebidas();
+    vector<Pizza> pizzas = menu.getPizzas();
+
+    cout << "Menu de Pizzas:" << endl;
+    for (Pizza pizza : pizzas)
+    {
+      cout << "Nombre: " << pizza.getNombre() << ", Tamaño: " << pizza.getTamaño() << endl;
+    }
+
+    cout << "Menu de Bebidas:" << endl;
+    for (Bebida bebida : bebidas)
+    {
+      cout << "Nombre: " << bebida.getNombre() << ", Tamaño de Vaso: " << bebida.getTamanioVaso() << endl;
+    }
   }
   else if (opcion == 9)
   {
-    cout << "Añadir producto al menu seleccionado." << endl;
+    cout << "Ingrese los datos de la nueva pizza:" << endl;
+    cout << "Nombre: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Tamaño: ";
+    string tamaño;
+    cin >> tamaño;
+    cout << "Nombre del ingrediente";
+    string nombreIngrediente;
+    cin >> nombreIngrediente;
+    cout << "Precio del ingrediente";
+    float precioIngrediente;
+    cin >> precioIngrediente;
+    Ingrediente ingrediente(nombreIngrediente, precioIngrediente);
+
+    Pizza nuevaPizza(nombre, tamaño, {ingrediente});
+    menu.agregarPizza(nuevaPizza);
+
+    cout << "Pizza añadida exitosamente." << endl;
   }
   else if (opcion == 10)
   {
-    cout << "Actualizar pizza seleccionado." << endl;
+    cout << "Ingrese los datos de la nueva bebida:" << endl;
+    cout << "Nombre: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Precio: ";
+    float precio;
+    cin >> precio;
+    cout << "Tamaño de vaso: ";
+    string tamanioVaso;
+    cin >> tamanioVaso;
+    Bebida nuevaBebida(nombre, precio, tamanioVaso);
+    menu.agregarBebida(nuevaBebida);
+    cout << "Bebida añadida exitosamente." << endl;
   }
   else if (opcion == 11)
   {
-    cout << "Actualizar bebida seleccionado." << endl;
+    cout << "Ingrese el nombre de la pizza a actualizar: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Ingrese los nuevos datos de la pizza:" << endl;
+    cout << "Nombre: ";
+    string nuevoNombre;
+    cin >> nuevoNombre;
+    cout << "Tamaño: ";
+    string tamaño;
+    cin >> tamaño;
+    cout << "Nombre del ingrediente";
+    string nombreIngrediente;
+    cin >> nombreIngrediente;
+    cout << "Precio del ingrediente";
+    float precioIngrediente;
+    cin >> precioIngrediente;
+    Ingrediente ingrediente(nombreIngrediente, precioIngrediente);
+    Pizza pizzaActualizada(nuevoNombre, tamaño, {ingrediente});
+    menu.actualizarPizza(nombre, pizzaActualizada);
+    cout << "Pizza actualizada exitosamente." << endl;
   }
   else if (opcion == 12)
   {
-    cout << "Eliminar producto del menu seleccionado." << endl;
+    cout << "Ingrese el nombre de la bebida a actualizar: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Ingrese los nuevos datos de la bebida:" << endl;
+    cout << "Nombre: ";
+    string nuevoNombre;
+    cin >> nuevoNombre;
+    cout << "Precio: ";
+    float precio;
+    cin >> precio;
+    cout << "Tamaño de vaso: ";
+    string tamanioVaso;
+    cin >> tamanioVaso;
+    Bebida bebidaActualizada(nuevoNombre, precio, tamanioVaso);
+    menu.actualizarBebida(nombre, bebidaActualizada);
+    cout << "Bebida actualizada exitosamente." << endl;
+  }
+
+  else if (opcion == 13)
+  {
+    cout << "Ingrese el nombre de la pizza a eliminar: ";
+    string nombre;
+    cin >> nombre;
+    menu.eliminarPizza(nombre);
+    cout << "Pizza eliminada exitosamente." << endl;
+  }
+  else if (opcion == 14)
+  {
+    cout << "Ingrese el nombre de la bebida a eliminar: ";
+    string nombre;
+    cin >> nombre;
+    menu.eliminarBebida(nombre);
+    cout << "Bebida eliminada exitosamente." << endl;
   }
 
   // Empleados
