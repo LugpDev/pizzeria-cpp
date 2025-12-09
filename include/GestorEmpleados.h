@@ -1,5 +1,5 @@
-#ifndef _GESTOREMPLEADOS_H__
-#define _GESTOREMPLEADOS_H_
+#ifndef __GESTOREMPLEADOS_H__
+#define __GESTOREMPLEADOS_H__
 
 #include <string>
 #include <vector>
@@ -7,7 +7,8 @@
 
 using namespace std;
 
-class GestorEmpleados {
+class GestorEmpleados
+{
 private:
     vector<Empleado> empleados;
 
@@ -17,7 +18,6 @@ public:
     vector<Empleado> getEmpleados();
     void contratar(Empleado empleado);
     void despedir(int id);
-
 };
 
-#endif 
+#endif // __GESTOREMPLEADOS_H__
