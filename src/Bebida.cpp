@@ -15,10 +15,9 @@ Bebida::Bebida()
     tamanioVaso = "";
 };
 
-Bebida::Bebida(string _nombre, float _precio, string _tamanioVaso) : Producto(_nombre, _precio, "pedido")
+Bebida::Bebida(string _nombre, float _precio, string _tamanioVaso) : Producto(_nombre, _precio)
 {
     tamanioVaso = _tamanioVaso;
-    estado = "pedido";
 }
 
 string Bebida::getTamanioVaso()
