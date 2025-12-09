@@ -1,6 +1,9 @@
-#include <string>
-
 #include "Pizzeria.h"
+#include <string>
+#include <iostream>
+#include <vector>
+
+using namespace std;
 
 Pizzeria::Pizzeria() {};
 
@@ -51,12 +54,32 @@ void Pizzeria::ejecutarOpcion(int opcion)
   // Clientes
   if (opcion == 1)
   {
-    cout << "Agregar cliente seleccionado." << endl;
+    cout << "Ingrese los datos del nuevo cliente:" << endl;
+    cout << "Nombre: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Edad: ";
+    int edad;
+    cin >> edad;
+    cout << "Telefono: ";
+    string telefono;
+    cin >> telefono;
+    Cliente nuevoCliente(nombre, edad, telefono);
+    gestorClientes.agregarCliente(nuevoCliente);
+    cout << "Cliente agregado exitosamente." << endl;
   }
   else if (opcion == 2)
   {
-    cout << "Mostrar clientes seleccionado." << endl;
+    vector<Cliente> clientes = gestorClientes.getClientes();
+
+    cout << "Lista de clientes:" << endl;
+
+    for (Cliente cliente : clientes)
+    {
+      cout << "Nombre: " << cliente.getNombre() << ", Edad: " << cliente.getEdad() << ", Telefono: " << cliente.getTelefono() << ", Numero de Ordenes: " << cliente.getNumDeOrdenes() << endl;
+    }
   }
+
   // Pedidos
   else if (opcion == 3)
   {
