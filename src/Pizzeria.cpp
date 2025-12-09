@@ -84,6 +84,20 @@ void Pizzeria::ejecutarOpcion(int opcion)
   // Pedidos
   else if (opcion == 3)
   {
+    cout << "Ingrese los datos del nuevo pedido:" << endl;
+    cout << "Nombre del cliente: ";
+    string nombreCliente;
+    cin >> nombreCliente;
+    cout << "Edad del cliente: ";
+    int edadCliente;
+    cin >> edadCliente;
+    cout << "Telefono del cliente: ";
+    string telefonoCliente;
+    cin >> telefonoCliente;
+    Cliente cliente(nombreCliente, edadCliente, telefonoCliente);
+    int idPedido = rand() % 1000;
+    Pedido nuevoPedido(idPedido, cliente);
+    gestorPedidos.registrarPedido(nuevoPedido);
     cout << "Pedido registrado exitosamente." << endl;
   }
   else if (opcion == 4)
@@ -136,13 +150,13 @@ void Pizzeria::ejecutarOpcion(int opcion)
     cout << "Menu de Pizzas:" << endl;
     for (Pizza pizza : pizzas)
     {
-      cout << "Nombre: " << pizza.getNombre() << ", Tamaño: " << pizza.getTamaño() << endl;
+      cout << "Nombre: " << pizza.getNombre() << ", Tamaño: " << pizza.getTamaño() << "Precio: " << pizza.getPrecio() << endl;
     }
 
     cout << "Menu de Bebidas:" << endl;
     for (Bebida bebida : bebidas)
     {
-      cout << "Nombre: " << bebida.getNombre() << ", Tamaño de Vaso: " << bebida.getTamanioVaso() << endl;
+      cout << "Nombre: " << bebida.getNombre() << ", Tamaño de Vaso: " << bebida.getTamanioVaso() << "Precio: " << bebida.getPrecio() << endl;
     }
   }
   else if (opcion == 9)
@@ -154,10 +168,10 @@ void Pizzeria::ejecutarOpcion(int opcion)
     cout << "Tamaño: ";
     string tamaño;
     cin >> tamaño;
-    cout << "Nombre del ingrediente";
+    cout << "Nombre del ingrediente: ";
     string nombreIngrediente;
     cin >> nombreIngrediente;
-    cout << "Precio del ingrediente";
+    cout << "Precio del ingrediente: ";
     float precioIngrediente;
     cin >> precioIngrediente;
     Ingrediente ingrediente(nombreIngrediente, precioIngrediente);
@@ -195,10 +209,10 @@ void Pizzeria::ejecutarOpcion(int opcion)
     cout << "Tamaño: ";
     string tamaño;
     cin >> tamaño;
-    cout << "Nombre del ingrediente";
+    cout << "Nombre del ingrediente: ";
     string nombreIngrediente;
     cin >> nombreIngrediente;
-    cout << "Precio del ingrediente";
+    cout << "Precio del ingrediente: ";
     float precioIngrediente;
     cin >> precioIngrediente;
     Ingrediente ingrediente(nombreIngrediente, precioIngrediente);
