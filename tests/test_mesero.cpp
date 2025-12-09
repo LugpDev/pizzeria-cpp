@@ -12,8 +12,8 @@ int main()
     Bebida bebida1("Coca Cola", 20.0, "grande");
     assert(bebida1.getEstado() == "pedido");
 
-    mesero1.PrepararBebida(bebida1);
+    mesero1.prepararBebida(bebida1);
     assert(bebida1.getEstado() == "servido");
 
     cout << "Pruebas de Mesero pasadas exitosamente." << endl;
-} 
+}
