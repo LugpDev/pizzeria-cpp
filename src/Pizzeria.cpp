@@ -15,8 +15,10 @@ Pizzeria::Pizzeria(string _nombre)
 
 void Pizzeria::mostrarOpciones()
 {
+  cout << "=============================" << endl;
   cout << "Bienvenido a " << nombre << "!" << endl;
   cout << "Seleccione una opcion del menu:" << endl;
+  cout << "0. Salir" << endl;
   cout << "========== Clientes =========" << endl;
   cout << "1. Agregar cliente" << endl;
   cout << "2. Mostrar clientes" << endl;
@@ -41,6 +43,7 @@ void Pizzeria::mostrarOpciones()
   cout << "15. Contratar empleado" << endl;
   cout << "16. Despedir empleado" << endl;
   cout << "17. Mostrar empleados" << endl;
+  cout << "=============================" << endl;
 };
 
 void Pizzeria::ejecutarOpcion(int opcion)
