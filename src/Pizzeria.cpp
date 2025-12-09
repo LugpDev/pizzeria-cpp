@@ -84,22 +84,46 @@ void Pizzeria::ejecutarOpcion(int opcion)
   // Pedidos
   else if (opcion == 3)
   {
-    cout << "Registrar pedido seleccionado." << endl;
+    cout << "Pedido registrado exitosamente." << endl;
   }
   else if (opcion == 4)
   {
-    cout << "Eliminar pedido seleccionado." << endl;
+    cout << "Ingrese el ID del pedido a eliminar: ";
+    int id;
+    cin >> id;
+    gestorPedidos.eliminarPedido(id);
+    cout << "Pedido eliminado exitosamente." << endl;
   }
   else if (opcion == 5)
   {
-    cout << "Entregar pedido seleccionado." << endl;
+    cout << "Ingrese el ID del pedido a entregar: ";
+    int id;
+    cin >> id;
+    gestorPedidos.entregarPedido(id);
+    cout << "Pedido entregado exitosamente." << endl;
   }
   else if (opcion == 6)
   {
-    cout << "Obtener pedido por ID seleccionado." << endl;
+    cout << "Ingrese el ID del pedido a obtener: ";
+    int id;
+    cin >> id;
+    Pedido pedido = gestorPedidos.getPedido(id);
+    if (pedido.getId() != -1)
+    {
+      cout << "Pedido ID: " << pedido.getId() << ", Cliente: " << pedido.getCliente().getNombre() << ", Estado: " << pedido.getEstado() << endl;
+    }
+    else
+    {
+      cout << "Pedido no encontrado." << endl;
+    }
   }
   else if (opcion == 7)
   {
+    for (Pedido pedido : gestorPedidos.getPedidos())
+    {
+      cout << "Pedido ID: " << pedido.getId() << ", Cliente: " << pedido.getCliente().getNombre() << ", Estado: " << pedido.getEstado() << endl;
+    }
+
     cout << "Mostrar pedidos seleccionado." << endl;
   }
   // Menu
