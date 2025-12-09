@@ -14,7 +14,8 @@ int Mesero::getBebidasPreparadas()
 {
     return bebidasPreparadas;
 }
-void Mesero::prepararBebida(Bebida bebida)
+void Mesero::prepararBebida(Bebida &bebida)
 {
     bebida.servir();
+    bebidasPreparadas++;
 }

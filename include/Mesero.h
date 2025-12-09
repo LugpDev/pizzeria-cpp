@@ -12,7 +12,7 @@ private:
 
 public:
     int getBebidasPreparadas();
-    void prepararBebida(Bebida bebida);
+    void prepararBebida(Bebida &bebida);
     Mesero();
     Mesero(string _nombre, int _edad, string _telefono, int _id);
 };

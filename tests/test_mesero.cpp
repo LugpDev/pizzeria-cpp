@@ -6,13 +6,14 @@ using namespace std;
 
 int main()
 {
-    Mesero mesero1;
+    Mesero mesero1("Juan", 30, "1234567890", 1);
     assert(mesero1.getBebidasPreparadas() == 0);
 
     Bebida bebida1("Coca Cola", 20.0, "grande");
     assert(bebida1.getEstado() == "pedido");
 
     mesero1.prepararBebida(bebida1);
+    cout << bebida1.getEstado() << endl;
     assert(bebida1.getEstado() == "servido");
 
     cout << "Pruebas de Mesero pasadas exitosamente." << endl;
