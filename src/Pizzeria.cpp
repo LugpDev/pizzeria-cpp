@@ -30,18 +30,20 @@ void Pizzeria::mostrarOpciones()
   cout << "=============================" << endl;
   cout << "=========== Menu ============" << endl;
   cout << "8. Mostrar menu" << endl;
-  cout << "9. Añadir producto al menu" << endl;
-  cout << "10. Actualizar pizza" << endl;
-  cout << "11. Actualizar bebida" << endl;
-  cout << "12. Eliminar producto del menu" << endl;
+  cout << "9. Añadir pizza al menu" << endl;
+  cout << "10. Añadir bebida al menu" << endl;
+  cout << "11. Actualizar pizza" << endl;
+  cout << "12. Actualizar bebida" << endl;
+  cout << "13. Eliminar pizza del menu" << endl;
+  cout << "14. Eliminar bebida del menu" << endl;
   cout << "=============================" << endl;
   cout << "========= Empleados =========" << endl;
-  cout << "13. Contratar empleado" << endl;
-  cout << "14. Despedir empleado" << endl;
-  cout << "15. Mostrar empleados" << endl;
+  cout << "15. Contratar empleado" << endl;
+  cout << "16. Despedir empleado" << endl;
+  cout << "17. Mostrar empleados" << endl;
 };
 
-Pizzeria::ejecutarOpcion(int opcion)
+void Pizzeria::ejecutarOpcion(int opcion)
 {
   // Clientes
   if (opcion == 1)
