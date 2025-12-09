@@ -1,19 +1,20 @@
 #include "Pizzeria.h"
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-  Pizzeria pizzeria;
-  pizzeria.mostrarOpciones();
+  Pizzeria pizzeria("Pizzería de Toño");
   int opcion;
 
-  std::cout << "Ingrese una opcion: ";
-  std::cin >> opcion;
   do
   {
-    pizzeria.ejecutarOpcion(opcion);
     pizzeria.mostrarOpciones();
-    std::cout << "Ingrese una opcion: ";
-    std::cin >> opcion;
+    cin >> opcion;
+
+    pizzeria.ejecutarOpcion(opcion);
+
   } while (opcion != 0);
 
   return 0;

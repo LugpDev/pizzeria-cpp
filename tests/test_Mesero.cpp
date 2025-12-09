@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    Mesero mesero1;
+    Mesero mesero1("Juan", 30, "1234567890", 1);
     assert(mesero1.getBebidasPreparadas() == 0);
 
     Bebida bebida1("Coca Cola", 20.0, "grande");
