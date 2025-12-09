@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <cstdlib>
 
 using namespace std;
 
@@ -122,18 +123,40 @@ void Pizzeria::ejecutarOpcion(int opcion)
   {
     cout << "Eliminar producto del menu seleccionado." << endl;
   }
+
   // Empleados
-  else if (opcion == 13)
-  {
-    cout << "Contratar empleado seleccionado." << endl;
-  }
-  else if (opcion == 14)
-  {
-    cout << "Despedir empleado seleccionado." << endl;
-  }
   else if (opcion == 15)
   {
-    cout << "Mostrar empleados seleccionado." << endl;
+    cout << "Ingrese los datos del nuevo empleado:" << endl;
+    cout << "Nombre: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Edad: ";
+    int edad;
+    cin >> edad;
+    cout << "Telefono: ";
+    string telefono;
+    cin >> telefono;
+    Empleado nuevoEmpleado(nombre, edad, telefono, rand() % 1000);
+    gestorEmpleados.contratar(nuevoEmpleado);
+    cout << "Empleado agregado exitosamente." << endl;
+  }
+  else if (opcion == 16)
+  {
+    cout << "Ingrese el ID del empleado a despedir: ";
+    int id;
+    cin >> id;
+    gestorEmpleados.despedir(id);
+    cout << "Empleado despedido exitosamente." << endl;
+  }
+  else if (opcion == 17)
+  {
+    vector<Empleado> empleados = gestorEmpleados.getEmpleados();
+    cout << "Lista de empleados:" << endl;
+    for (Empleado empleado : empleados)
+    {
+      cout << "ID: " << empleado.getId() << ", Nombre: " << empleado.getNombre() << ", Edad: " << empleado.getEdad() << ", Telefono: " << empleado.getTelefono() << endl;
+    }
   }
 }
 
