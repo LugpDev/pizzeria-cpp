@@ -1,23 +1,20 @@
 using namespace std;
 #include "Mesero.h"
+#include "Empleado.h"
 #include <string>
 
-Mesero::Mesero() : Empleado() {
+Mesero::Mesero() {};
+
+Mesero::Mesero(string _nombre, int _edad, string _telefono, int _id) : Empleado(_nombre, _edad, _telefono, _id)
+{
     bebidasPreparadas = 0;
 }
 
-int Mesero::getBebidasPreparadas() {
+int Mesero::getBebidasPreparadas()
+{
     return bebidasPreparadas;
 }
-void Mesero::PrepararBebida(Bebida:bebida) {
-    bebida.servir();
-    
-}
-Mesero::Mesero(string nombre, int edad, string telefono, int id)
+void Mesero::prepararBebida(Bebida bebida)
 {
-    nombre = nombre;
-    edad = edad;
-    telefono = telefono;
-    id = id;
-    bebidasPreparadas = 0;
+    bebida.servir();
 }
