@@ -13,7 +13,6 @@ int main()
     assert(bebida1.getEstado() == "pedido");
 
     mesero1.prepararBebida(bebida1);
-    cout << bebida1.getEstado() << endl;
     assert(bebida1.getEstado() == "servido");
 
     cout << "Pruebas de Mesero pasadas exitosamente." << endl;
