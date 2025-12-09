@@ -14,14 +14,14 @@ void Pedido::añadirProducto(Producto producto)
     productos.push_back(producto);
 }
 
-void Pedido::calcularTotal()
+float Pedido::calcularTotal()
 {
     float total = 0.0;
     for (Producto producto : productos)
     {
         total += producto.getPrecio();
     }
-    cout << "Total del pedido: " << total << endl;
+    return total;
 }
 
 void Pedido::pagar(float pago)

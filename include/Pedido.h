@@ -22,7 +22,7 @@ public:
     Pedido();
     Pedido(int _id, Cliente _cliente);
     void añadirProducto(Producto producto);
-    void calcularTotal();
+    float calcularTotal();
     void pagar(float pago);
 
     string getEstado();
