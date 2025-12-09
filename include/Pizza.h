@@ -19,7 +19,7 @@ public:
     Pizza(string nombre, const string &tamaño, vector<Ingrediente> ingredientes);
 
     void amasar();
-    void ponerIngrediente();
+    void ponerIngredientes();
     void hornear();
     string getTamaño() const;
 };

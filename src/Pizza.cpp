@@ -18,14 +18,16 @@ void Pizza::amasar()
 {
     if (estado == "pedido")
     {
+        cout << "Amasando la pizza..." << endl;
         estado = "amasado";
     }
 }
 
-void Pizza::ponerIngrediente()
+void Pizza::ponerIngredientes()
 {
     if (estado == "amasado")
     {
+        cout << "Agregando ingredientes..." << endl;
         estado = "ingredientes agregados";
     }
 }
@@ -34,6 +36,7 @@ void Pizza::hornear()
 {
     if (estado == "ingredientes agregados")
     {
+        cout << "Horneando la pizza..." << endl;
         estado = "listo";
     }
 }
